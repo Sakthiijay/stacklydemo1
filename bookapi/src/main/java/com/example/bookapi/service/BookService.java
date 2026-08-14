@@ -12,7 +12,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class BookService {
 
-    private final BookRepository bookRepository;
+    private final BookRepository  bookRepository;
 
     public Book createBook(Book book) {
         return bookRepository.save(book);
