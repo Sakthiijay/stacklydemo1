@@ -36,7 +36,7 @@ public class BookController {
         return book.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // DELETE /books/{id} – Delete a book
+    // DELETE – Delete a book
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
         if (bookService.getBookById(id).isPresent()) {
