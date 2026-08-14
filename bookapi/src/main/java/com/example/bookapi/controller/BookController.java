@@ -22,7 +22,7 @@ public class BookController {
         return bookService.createBook(book);
     }
 
-    // GET /books – Get all books
+    // GET /books – Get all books vijay
     @GetMapping
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
